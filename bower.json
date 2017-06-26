@@ -1,5 +1,6 @@
 {
   "name": "uiFormat",
+  "version": "1.0.0",
   "description": "",
   "main": "uiFormat.module.js",
   "authors": [
