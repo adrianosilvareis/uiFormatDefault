@@ -18,7 +18,7 @@ gulp.task('jshint', function () {
 gulp.task('uglify', ['clean'], function () {
     return gulp.src(['*.module.js','*.directive.js'])
                 .pipe(uglify({mangle: false}))
-                .pipe(concat('uiFormart.min.js'))
+                .pipe(concat('uiFormat.min.js'))
             .pipe(gulp.dest('dist/'));
 });
 

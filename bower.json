@@ -1,7 +1,7 @@
 {
-  "name": "uiFormart",
+  "name": "uiFormat",
   "description": "",
-  "main": "uiFormart.module.js",
+  "main": "uiFormat.module.js",
   "authors": [
     "Adriano Silva dos REis"
   ],

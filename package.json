@@ -1,8 +1,8 @@
 {
-  "name": "uiFormart",
+  "name": "uiFormat",
   "version": "1.0.0",
   "description": "",
-  "main": "uiFormart.module.js",
+  "main": "uiFormat.module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
