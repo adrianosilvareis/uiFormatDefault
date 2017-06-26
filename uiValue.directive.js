@@ -1,4 +1,4 @@
-angular.module("uiFormat").directive("uiNumber", function () {
+angular.module("uiFormat").directive("uiFormatValue", function () {
     return {
         require: "ngModel",
         link: function (scope, element, attrs, ctrl) {
@@ -17,10 +17,12 @@ angular.module("uiFormat").directive("uiNumber", function () {
                 return number;
             };
 
+            ctrl.$formatters.push(function (value) {
+                return _formatNumber(value);
+            });
+
             element.bind("keyup", function () {
-                number = ctrl.$viewValue;
-                number = _formatNumber(number);
-                ctrl.$setViewValue(number);
+                ctrl.$setViewValue(_formatNumber(ctrl.$viewValue));
                 ctrl.$render();
             });
 
