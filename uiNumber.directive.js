@@ -5,7 +5,7 @@ angular.module("uiFormat").directive("uiFormatNumber", function () {
             var _formatNumber = function (number) {
                 if (number === undefined)
                     number = "";
-                number = number.replace(/[^0-9]+/g, "");
+                number = number.toString().replace(/[^0-9]+/g, "");
                 return number;
             };
 
